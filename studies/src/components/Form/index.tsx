@@ -1,11 +1,12 @@
 import React from 'react'
 import Button from '../Button'
+import './styles.scss'
 
 export default function Form() {
 	return (
-		<form>
-			<div>
-				<label htmlFor='task'>Add um novo Estudo</label>
+		<form className='newTask'>
+			<div className='inputContainer'>
+				<label htmlFor='task'>Adicione um novo Estudo</label>
 				<input
 					type='text'
 					name='task'
@@ -14,7 +15,7 @@ export default function Form() {
 					required
 				/>
 			</div>
-			<div>
+			<div className='inputContainer'>
 				<label htmlFor='time'>Tempo</label>
 				<input
 					type='time'
