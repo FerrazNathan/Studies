@@ -1,7 +1,8 @@
 import React from 'react'
+import './styles.scss'
 
 export default function Button() {
   return (
-    <button>Teste</button>
+    <button className='button'>Teste</button>
   )
 }

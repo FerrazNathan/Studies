@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.scss'
 
 export default function List() {
 
@@ -9,7 +10,7 @@ export default function List() {
     },
     {
       task: 'JavaScript',
-      time: '06:00:00'
+      time: '06:f00:00'
     },
     {
       task: 'TypeScript',
@@ -18,12 +19,12 @@ export default function List() {
   ]
 
   return (
-    <aside>
+    <aside className='listTasks'>
       <h2>Estudos do Dia</h2>
       <ul>
         {
           tasks.map((item, idx) => (
-            <li key={idx}>
+            <li key={idx} className='item'>
               <h3>{item.task}</h3>
               <p>{item.time}</p>
             </li>
