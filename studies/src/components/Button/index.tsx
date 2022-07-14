@@ -1,8 +1,8 @@
 import React from 'react'
-import './styles.scss'
+import styles from './Button.module.scss'
 
 export default function Button() {
   return (
-    <button className='button'>Teste</button>
+    <button className={styles.button}>Teste</button>
   )
 }
