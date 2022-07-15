@@ -1,4 +1,5 @@
 import React from 'react'
+import Item from './Item'
 import styles from './List.module.scss'
 
 export default function List() {
@@ -24,10 +25,9 @@ export default function List() {
       <ul>
         {
           tasks.map((item, idx) => (
-            <li key={idx} className={styles.item}>
-              <h3>{item.task}</h3>
-              <p>{item.time}</p>
-            </li>
+            <Item key={idx}
+              {...item}
+            />
           ))
         }
       </ul>
